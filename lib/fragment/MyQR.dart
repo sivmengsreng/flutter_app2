@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class profile extends StatelessWidget {
+class MyQR extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return new Center(
-      child: new Text("Profile",
-      style: TextStyle(
-        fontSize: 20.0),
+      child: new Text("My QR Code ",
+        style: TextStyle(
+            fontSize: 20.0),
       ),
 
     );
