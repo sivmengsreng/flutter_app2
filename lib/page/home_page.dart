@@ -2,7 +2,7 @@ import 'package:flutter_app2/fragment/profile.dart';
 import 'package:flutter_app2/fragment/Setting.dart';
 import 'package:flutter_app2/fragment/Transfer.dart';
 import 'package:flutter_app2/fragment/ExchangeRate.dart';
-//import 'package:flutter_app2/fragment/contastus.dart';
+import 'package:flutter_app2/fragment/contast_us.dart';
 import 'package:flutter/material.dart';
 
 class DrawerItem {
@@ -18,7 +18,7 @@ class HomePage extends StatefulWidget {
     new DrawerItem("Setting", Icons.settings),
     new DrawerItem("Transfer", Icons.compare_arrows),
     new DrawerItem("Exchange Rate ", Icons.rate_review),
-
+    new DrawerItem("contastus ", Icons.contact_phone),
   ];
 
   @override
@@ -40,6 +40,9 @@ class HomePageState extends State<HomePage> {
         return new Transfer();
       case 3:
         return new ExchangeRate();
+      case 4:
+        return new contastus();
+
       default:
         return new Text("Error");
     }
